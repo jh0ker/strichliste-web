@@ -8,6 +8,10 @@
                    maxlength="23" class="form-control form-input-name input-lg"
                    ng-model="name" required autocomplete="off" autofocus>
             <br>
+            <input type="email" name="email" placeholder="{{'createUserEmailInputPlaceholder' | translate}}"
+                   maxlength="50" class="form-control form-input-name input-lg"
+                   ng-model="email" autocomplete="off" >
+            <br>
             <input type="submit" value="{{'createUserSubmitLabel' | translate}}" class="form-control">
         </form>
     </div>
