@@ -3,7 +3,7 @@ module.exports.install = function(app) {
 
         $scope.createUser = function() {
             userService
-                .createUser($scope.name)
+                .createUser($scope.name, $scope.email)
                 .success(function() {
                     locationService.gotoHome();
                 })
